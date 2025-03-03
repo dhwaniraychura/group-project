@@ -5,6 +5,9 @@ body {
     font-family: 'Syne', sans-serif;
     background-color: #000;
 }
+.black-shad{
+    opacity: 0.4;
+}
 @keyframes text-animetion-1 {
     0%{
         opacity: 0;
@@ -30,7 +33,7 @@ body {
     }
 }
 .nav-animetion{
-    animation: nav-animetion 1s linear 0.5s forwards  ;
+    animation: nav-animetion 1s linear 0.5s forwards ;
 }
 .navbar {
     z-index: 1000;
@@ -228,9 +231,7 @@ body {
     white-space: nowrap;
 }
 
-
-
-/* Show popup on hover */
+                                                    /* Show popup on hover */
 .chat-widget:hover .presale-popup {
     opacity: 1 !important;
     transform: translateX(80px)!important;
@@ -264,17 +265,13 @@ body {
 
 @keyframes zoom-in-out {
     from{
-        transform: 
-        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-        translateZ(350px);
+        transform: rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(350px);
     }to{
-        transform: 
-        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-        translateZ(550px);
+        transform: rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(550px);
     }
 }
 
 .banner .slider .item{
     inset: 0 0 0 0;
-    animation: zoom-in-out 1s linear  alternate-reverse  infinite;
+    animation: zoom-in-out 5s linear  alternate-reverse  infinite;
 }
