@@ -275,3 +275,34 @@ body {
     inset: 0 0 0 0;
     animation: zoom-in-out 5s linear  alternate-reverse  infinite;
 }
+
+/* footer  style  */
+.footer {
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+}
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: orange;
+}
+.social-icons a {
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.social-icons a:hover {
+    color: orange;
+    transform: scale(1.2);
+}
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+    
