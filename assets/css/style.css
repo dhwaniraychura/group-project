@@ -3,11 +3,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Syne', sans-serif;
-    background-color: #000;
+    background-color: #1f1f1f;
     box-sizing: border-box;
 }
 
-
+.blck-blur {
+    opacity: 0.44 !important;
+    top: 5px;
+    transform: scale(1.1);
+}
 
 @keyframes text-animetion-1 {
     0% {
@@ -288,7 +292,18 @@ body {
     animation: autoRun 20s linear infinite;
     z-index: 2;
 }
-
+.text-2{
+    color: rgb(35, 164, 255);
+}
+.highlight {
+    color: orange;
+}
+.image-box img{
+    transition: 0.5s;
+}
+.image-box img:hover{
+    transform: scale(1.05);
+}
 @keyframes autoRun {
     from {
         transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
@@ -331,13 +346,204 @@ body {
     50% { transform: scale(1.1); opacity: 0.4; }
     100% { transform: scale(1); opacity: 0.5; }
 }
-.border-costum{
+.border-costum {
     border-radius: 4%;
 } 
+
+.banner-15 {
+    background-color: #131617;
+    color: rgb(252, 210, 2);
+    padding: 30px;
+    border-radius: 5px;
+}
+.banner-15 h2 {
+    font-weight: bold;
+}
+.btn-custom {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.5s;
+}
+.btn-custom:hover {
+    color: white;
+    background-color: #ffd104;
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay-line-1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f9d800;
+    padding: 10px;
+    border-radius: 5px;
+}
+.overlay-line-1 span {
+    display: block;
+    font-size: 12px;
+    color: #4da6ff;
+}
+.full-height {
+    height: 100%;
+}
+
+.category img {
+    max-width: 80px;
+    height: auto;
+}
+
+
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #d4af37; /* Golden color for headings */
+  }
+  .category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #2a2a2a; /* Dark card background */
+    height: 100%; /* Ensure all cards have the same height */
+  }
+  .category-card img {
+    width: 100%;
+    height: 300px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the area */
+    transition: transform 0.3s ease;
+  }
+  .category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.3); /* Golden shadow */
+  }
+  .category-card:hover img {
+    transform: scale(1.1);
+  }
+  .category-card .overlay {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+  }
+  .category-card:hover .overlay {
+    opacity: 0.9;
+  }
+  .category-card h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: #d4af37; /* Golden color for category titles */
+  }
+  .category-card p {
+    font-size: 1rem;
+    margin: 5px 0 0;
+    opacity: 0.8;
+  }
+  .btn-explore {
+    background: #d4af37; /* Golden button */
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .btn-explore:hover {
+    background: #000; /* Black on hover */
+    color: #d4af37; /* Golden text on hover */
+  }
+
+
+   /* our teem  */
+  .title-teem {
+    font-family: 'Playfair Display', serif;
+    color: #d4af37; /* Golden color for headings */
+  }
+  .team-section {
+    padding: 80px 0;
+    color: white;
+  }
+  .team-member-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    background-color: #2a2a2a; /* Dark card background */
+  }
+  .team-member-card img {
+    width: 100%;
+    height: 400px; /* Lambe images */
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+  }
+  .team-member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.3); /* Golden shadow */
+  }
+  .team-member-card:hover img {
+    transform: scale(1.1);
+  }
+  .team-member-card .social-links {
+    position: absolute;
+    bottom: -100px; /* Start from bottom */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    transition: bottom 0.5s ease;
+  }
+  .team-member-card:hover .social-links {
+    bottom: 0; /* Slide up on hover */
+  }
+  .social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+  .social-links a:hover {
+    color: #d4af37; /* Golden color on hover */
+  }
+  .social-links a svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* Icon color matches the link color */
+  }
+  .team-member-card h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 20px 0 0;
+    color: #d4af37; /* Golden color for names */
+  }
+  .team-member-card p {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+    opacity: 0.8;
+  }
 /* footer  style  */
 .footer {
     background: linear-gradient(to right, #232526, #414345);
-    color: white;
+    /* color: white; */
 }
 
 .footer-logo {
@@ -367,8 +573,4 @@ body {
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-.blck-shad {
-    background-color: red !important;
 }
